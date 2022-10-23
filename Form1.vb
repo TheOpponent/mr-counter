@@ -56,6 +56,17 @@
         Score2 += 1
         SetLabel()
     End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        TopMost = CheckBox1.Checked
+        '
+        'If CheckBox1.Checked Then
+        '    CheckBox1.Font = New Font(CheckBox1.Font, FontStyle.Bold)
+        'Else
+        '    CheckBox1.Font = New Font(CheckBox1.Font, FontStyle.Regular)
+        'End If
+        '
+    End Sub
 End Class
 
 Module Program
@@ -66,8 +77,9 @@ Module Program
     Sub Main()
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
+
+        ' Read score files and set to 0 if they not contain an integer.
         Dim ScoreRead As String
-        ' Read score.txt and set to 0 if it does not contain an integer.
         If My.Computer.FileSystem.FileExists("score1.txt") Then
             ScoreRead = My.Computer.FileSystem.ReadAllText("score1.txt")
             If Not Integer.TryParse(ScoreRead, Score1) Then
@@ -77,15 +89,17 @@ Module Program
         Else
             My.Computer.FileSystem.WriteAllText("score1.txt", 0, False)
         End If
+
         If My.Computer.FileSystem.FileExists("score2.txt") Then
             ScoreRead = My.Computer.FileSystem.ReadAllText("score2.txt")
             If Not Integer.TryParse(ScoreRead, Score2) Then
-                Score1 = 0
+                Score2 = 0
                 My.Computer.FileSystem.WriteAllText("score2.txt", 0, False)
             End If
         Else
             My.Computer.FileSystem.WriteAllText("score2.txt", 0, False)
         End If
+
         Application.Run(New Form1)
     End Sub
 

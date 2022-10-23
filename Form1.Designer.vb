@@ -36,6 +36,7 @@ Partial Class Form1
         Me.DownButton = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -64,7 +65,7 @@ Partial Class Form1
         '
         Me.Score1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Score1Label.Location = New System.Drawing.Point(59, 19)
-        Me.Score1Label.Name = "Label1"
+        Me.Score1Label.Name = "Score1Label"
         Me.Score1Label.Size = New System.Drawing.Size(156, 64)
         Me.Score1Label.TabIndex = 2
         Me.Score1Label.Text = Score1
@@ -80,7 +81,7 @@ Partial Class Form1
         'Score1SetButton
         '
         Me.Score1SetButton.Location = New System.Drawing.Point(138, 84)
-        Me.Score1SetButton.Name = "Button3"
+        Me.Score1SetButton.Name = "Score1SetButton"
         Me.Score1SetButton.Size = New System.Drawing.Size(75, 23)
         Me.Score1SetButton.TabIndex = 4
         Me.Score1SetButton.Text = "Set"
@@ -180,11 +181,23 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Score 2"
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Location = New System.Drawing.Point(19, 305)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(98, 17)
+        Me.CheckBox1.TabIndex = 8
+        Me.CheckBox1.Text = "Always On Top"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(296, 305)
+        Me.ClientSize = New System.Drawing.Size(296, 330)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.DownButton)
         Me.Controls.Add(Me.UpButton)
         Me.Controls.Add(Me.GroupBox2)
@@ -199,6 +212,7 @@ Partial Class Form1
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Score1Minus1Button As Button
@@ -215,4 +229,5 @@ Partial Class Form1
     Friend WithEvents DownButton As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
