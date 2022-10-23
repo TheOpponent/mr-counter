@@ -1,6 +1,6 @@
 # Mr. Counter
 
-![0006574](https://user-images.githubusercontent.com/8432212/197369910-7653da35-54e2-43a9-8e8c-462e5f561269.png)
+![0006600](https://user-images.githubusercontent.com/8432212/197411692-70b99052-9ece-4064-84b5-0b6860c264d3.png)
 
 A simple program written in Visual Basic.NET to keep integer scores. The score can be updated by adding or subtracting 1, or set manually. Two additional buttons move 1 point from one score to another.
 
