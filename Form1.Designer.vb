@@ -22,79 +22,197 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Score1Plus1Button = New System.Windows.Forms.Button()
+        Me.Score1Minus1Button = New System.Windows.Forms.Button()
+        Me.Score1Label = New System.Windows.Forms.Label()
+        Me.Score1TextBox = New System.Windows.Forms.TextBox()
+        Me.Score1SetButton = New System.Windows.Forms.Button()
+        Me.Score2PlusButton = New System.Windows.Forms.Button()
+        Me.Score2Minus1Button = New System.Windows.Forms.Button()
+        Me.Score2Label = New System.Windows.Forms.Label()
+        Me.Score2TextBox = New System.Windows.Forms.TextBox()
+        Me.Score2SetButton = New System.Windows.Forms.Button()
+        Me.UpButton = New System.Windows.Forms.Button()
+        Me.DownButton = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'Score1Plus1Button
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(227, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(44, 64)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "+"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Score1Plus1Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Score1Plus1Button.Location = New System.Drawing.Point(221, 19)
+        Me.Score1Plus1Button.Name = "Score1Plus1Button"
+        Me.Score1Plus1Button.Size = New System.Drawing.Size(44, 64)
+        Me.Score1Plus1Button.TabIndex = 1
+        Me.Score1Plus1Button.Text = "+"
+        Me.Score1Plus1Button.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Score1Minus1Button
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(47, 64)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "-"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Score1Minus1Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Score1Minus1Button.Location = New System.Drawing.Point(6, 19)
+        Me.Score1Minus1Button.Name = "Score1Minus1Button"
+        Me.Score1Minus1Button.Size = New System.Drawing.Size(47, 64)
+        Me.Score1Minus1Button.TabIndex = 0
+        Me.Score1Minus1Button.Text = "-"
+        Me.Score1Minus1Button.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Score1Label
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(65, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 64)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = score
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Score1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Score1Label.Location = New System.Drawing.Point(59, 19)
+        Me.Score1Label.Name = "Label1"
+        Me.Score1Label.Size = New System.Drawing.Size(156, 64)
+        Me.Score1Label.TabIndex = 2
+        Me.Score1Label.Text = Score1
+        Me.Score1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TextBox1
+        'Score1TextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(63, 86)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(74, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.Score1TextBox.Location = New System.Drawing.Point(58, 86)
+        Me.Score1TextBox.Name = "Score1TextBox"
+        Me.Score1TextBox.Size = New System.Drawing.Size(74, 20)
+        Me.Score1TextBox.TabIndex = 3
         '
-        'Button3
+        'Score1SetButton
         '
-        Me.Button3.Location = New System.Drawing.Point(143, 84)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Set"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Score1SetButton.Location = New System.Drawing.Point(138, 84)
+        Me.Score1SetButton.Name = "Button3"
+        Me.Score1SetButton.Size = New System.Drawing.Size(75, 23)
+        Me.Score1SetButton.TabIndex = 4
+        Me.Score1SetButton.Text = "Set"
+        Me.Score1SetButton.UseVisualStyleBackColor = True
+        '
+        'Score2PlusButton
+        '
+        Me.Score2PlusButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Score2PlusButton.Location = New System.Drawing.Point(221, 19)
+        Me.Score2PlusButton.Name = "Score2PlusButton"
+        Me.Score2PlusButton.Size = New System.Drawing.Size(44, 64)
+        Me.Score2PlusButton.TabIndex = 8
+        Me.Score2PlusButton.Text = "+"
+        Me.Score2PlusButton.UseVisualStyleBackColor = True
+        '
+        'Score2Minus1Button
+        '
+        Me.Score2Minus1Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Score2Minus1Button.Location = New System.Drawing.Point(6, 19)
+        Me.Score2Minus1Button.Name = "Score2Minus1Button"
+        Me.Score2Minus1Button.Size = New System.Drawing.Size(47, 64)
+        Me.Score2Minus1Button.TabIndex = 7
+        Me.Score2Minus1Button.Text = "-"
+        Me.Score2Minus1Button.UseVisualStyleBackColor = True
+        '
+        'Score2Label
+        '
+        Me.Score2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Score2Label.Location = New System.Drawing.Point(59, 19)
+        Me.Score2Label.Name = "Score2Label"
+        Me.Score2Label.Size = New System.Drawing.Size(156, 64)
+        Me.Score2Label.TabIndex = 2
+        Me.Score2Label.Text = Score2
+        Me.Score2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Score2TextBox
+        '
+        Me.Score2TextBox.Location = New System.Drawing.Point(58, 86)
+        Me.Score2TextBox.Name = "Score2TextBox"
+        Me.Score2TextBox.Size = New System.Drawing.Size(74, 20)
+        Me.Score2TextBox.TabIndex = 9
+        '
+        'Score2SetButton
+        '
+        Me.Score2SetButton.Location = New System.Drawing.Point(138, 84)
+        Me.Score2SetButton.Name = "Score2SetButton"
+        Me.Score2SetButton.Size = New System.Drawing.Size(75, 23)
+        Me.Score2SetButton.TabIndex = 10
+        Me.Score2SetButton.Text = "Set"
+        Me.Score2SetButton.UseVisualStyleBackColor = True
+        '
+        'UpButton
+        '
+        Me.UpButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpButton.Location = New System.Drawing.Point(70, 138)
+        Me.UpButton.Name = "UpButton"
+        Me.UpButton.Size = New System.Drawing.Size(74, 34)
+        Me.UpButton.TabIndex = 5
+        Me.UpButton.Text = "↑"
+        Me.UpButton.UseVisualStyleBackColor = True
+        '
+        'DownButton
+        '
+        Me.DownButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DownButton.Location = New System.Drawing.Point(153, 138)
+        Me.DownButton.Name = "DownButton"
+        Me.DownButton.Size = New System.Drawing.Size(74, 34)
+        Me.DownButton.TabIndex = 6
+        Me.DownButton.Text = "↓"
+        Me.DownButton.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Score1Minus1Button)
+        Me.GroupBox1.Controls.Add(Me.Score1Label)
+        Me.GroupBox1.Controls.Add(Me.Score1SetButton)
+        Me.GroupBox1.Controls.Add(Me.Score1Plus1Button)
+        Me.GroupBox1.Controls.Add(Me.Score1TextBox)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(271, 120)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Score 1"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Score2Minus1Button)
+        Me.GroupBox2.Controls.Add(Me.Score2Label)
+        Me.GroupBox2.Controls.Add(Me.Score2SetButton)
+        Me.GroupBox2.Controls.Add(Me.Score2PlusButton)
+        Me.GroupBox2.Controls.Add(Me.Score2TextBox)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 178)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(271, 120)
+        Me.GroupBox2.TabIndex = 7
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Score 2"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(281, 116)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(296, 305)
+        Me.Controls.Add(Me.DownButton)
+        Me.Controls.Add(Me.UpButton)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Mr. Counter"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Score1Minus1Button As Button
+    Friend WithEvents Score1Label As Label
+    Friend WithEvents Score1TextBox As TextBox
+    Friend WithEvents Score1SetButton As Button
+    Friend WithEvents Score1Plus1Button As Button
+    Friend WithEvents Score2PlusButton As Button
+    Friend WithEvents Score2Minus1Button As Button
+    Friend WithEvents Score2Label As Label
+    Friend WithEvents Score2TextBox As TextBox
+    Friend WithEvents Score2SetButton As Button
+    Friend WithEvents UpButton As Button
+    Friend WithEvents DownButton As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
